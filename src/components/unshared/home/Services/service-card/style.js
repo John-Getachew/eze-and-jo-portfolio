@@ -4,7 +4,6 @@ export const ServiceCardRoot = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 20px;
   text-align: center;
 `;
 

@@ -15,6 +15,13 @@ export const Description = styled.p`
 `;
 
 export const ServicesCardsContainer = styled.div`
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 100px 40px;
+  @media ${(props) => props.theme.breakpoints.md} {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media ${(props) => props.theme.breakpoints.sm} {
+    grid-template-columns: 1fr;
+  }
 `;

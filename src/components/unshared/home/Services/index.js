@@ -1,70 +1,66 @@
-import { SectionHeader, ServiceRoot, ServicesCardsContainer } from "./style";
-import { FaBeer } from "react-icons/fa";
-import ServiceCard from "./ServiceCard";
+import {
+  Description,
+  SectionHeader,
+  ServiceRoot,
+  ServicesCardsContainer,
+} from "./style";
+import { FaChalkboardTeacher, FaTools, FaUserFriends } from "react-icons/fa";
+import { IoMdHelp } from "react-icons/io";
+import ServiceCard from "./service-card";
 
 const Services = () => {
-  const servicesData = [
+  const services = [
     {
-      serviceName: "Courses",
+      serviceName: "Web/App development",
       serviceDescription:
         "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-      serviceImage: <FaBeer />,
+      serviceImage: <FaTools size={50} color={"#ffffff"} />,
       serviceLink: "/",
+      serviceImageBackground: "#bf0043",
     },
     {
-      serviceName: "Assistance",
+      serviceName: "Live Classes",
       serviceDescription:
         "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-      serviceImage: <FaBeer />,
+      serviceImage: <FaChalkboardTeacher size={50} color={"#ffffff"} />,
       serviceLink: "/",
+      serviceImageBackground: "#00bfb2",
     },
     {
-      serviceName: "Development",
+      serviceName: "Recruitment",
       serviceDescription:
         "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-      serviceImage: <FaBeer />,
+      serviceImage: <FaUserFriends size={50} color={"#ffffff"} />,
       serviceLink: "/",
+      serviceImageBackground: "#bd00c7",
     },
     {
-      serviceName: "Hiring",
+      serviceName: "Job Assistance",
       serviceDescription:
         "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-      serviceImage: <FaBeer />,
+      serviceImage: <IoMdHelp size={50} color={"#ffffff"} />,
       serviceLink: "/",
-    },
-    {
-      serviceName: "Bootcamp",
-      serviceDescription:
-        "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-      serviceImage: <FaBeer />,
-      serviceLink: "/",
-    },
-    {
-      serviceName: "Bootcamp",
-      serviceDescription:
-        "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-      serviceImage: <FaBeer />,
-      serviceLink: "/",
-    },
-    {
-      serviceName: "Bootcamp",
-      serviceDescription:
-        "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-      serviceImage: <FaBeer />,
-      serviceLink: "/",
+      serviceImageBackground: "#bd7800",
     },
   ];
+
   return (
     <ServiceRoot>
       <SectionHeader>What do we provide?</SectionHeader>
+      <Description>
+        It is a long established fact that a reader will be distracted by the
+        readable content of a page when looking at its layout. <br /> It is a
+        long established fact.
+      </Description>
       <ServicesCardsContainer>
-        {servicesData.map((serviceData) => (
+        {services.map((service) => (
           <ServiceCard
-            key={serviceData.serviceName}
-            serviceName={serviceData.serviceName}
-            serviceDescription={serviceData.serviceDescription}
-            serviceImage={serviceData.serviceImage}
-            serviceLink={serviceData.serviceLink}
+            key={service.serviceName}
+            serviceImage={service.serviceImage}
+            serviceName={service.serviceName}
+            serviceDescription={service.serviceDescription}
+            serviceLink={service.serviceLink}
+            serviceImageBackground={service.serviceImageBackground}
           />
         ))}
       </ServicesCardsContainer>

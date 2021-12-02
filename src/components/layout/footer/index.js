@@ -14,6 +14,8 @@ import {
   AiFillFacebook,
   AiFillLinkedin,
 } from "react-icons/ai";
+
+import Link from "next/link";
 const Footer = () => {
   return (
     <FooterRoot>
@@ -41,7 +43,9 @@ const Footer = () => {
       <Services>
         <h3>Services</h3>
         <span>Web/App development</span>
-        <span>Live classes</span>
+        <Link href={"/services/courses"} passHref>
+          <span>Live classes</span>
+        </Link>
         <span>Recruitment</span>
         <span>Job assistance</span>
       </Services>

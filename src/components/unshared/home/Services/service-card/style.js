@@ -25,14 +25,14 @@ export const ServiceCardDescription = styled.p`
   margin-top: 20px;
   font-size: 14px;
   line-height: 1.6;
-  color: #ffffffdd;
+  color: #ffffff99;
+  padding: 10px 20px;
 `;
 
 export const LearnMoreButton = styled.a`
   font-size: 14px;
   margin-top: 20px;
   font-weight: bold;
-  color: #ffffffcc;
-  border: 2px solid #ffffff;
+  color: #e3e5ffbb;
   padding: 4px 10px;
 `;

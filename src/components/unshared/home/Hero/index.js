@@ -11,28 +11,27 @@ import {
 const Hero = () => {
   return (
     <HeroRoot>
-      <LeftFlex>
-        <SectionTitle>
-          We Solve <br />
-          Your Techonology Problems.
-        </SectionTitle>
-        <TypedServices>
-          <Typewriter
-            words={[
-              "WEB DEVELOPMENT",
-              "APP DEVELOPMENT",
-              "COURSES",
-              "ASSISTANCE",
-            ]}
-            cursor
-            cursorStyle={"|"}
-            loop={0}
-          />
-        </TypedServices>
-        <GetStartedButton>Get Started</GetStartedButton>
-      </LeftFlex>
+
       <RightFlex>
-        <Particles />
+          <SectionTitle>
+              We Solve <br />
+              Your Technology Problems.
+          </SectionTitle>
+          <TypedServices>
+              <Typewriter
+                  words={[
+                      "WEB DEVELOPMENT",
+                      "APP DEVELOPMENT",
+                      "COURSES & TRAINING",
+                      "ASSISTANCE & MENTORING",
+                  ]}
+                  cursor
+                  cursorStyle={"|"}
+                  loop={0}
+              />
+          </TypedServices>
+          <Particles />
+          <GetStartedButton>Get Started</GetStartedButton>
       </RightFlex>
     </HeroRoot>
   );

@@ -3,6 +3,8 @@ import { keyframes } from "@emotion/react";
 
 export const ParticleRoot = styled.div`
   display: flex;
+  position: absolute;
+  top: 1em;
 `;
 
 const animate = keyframes`

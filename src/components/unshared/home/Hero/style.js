@@ -2,7 +2,10 @@ import styled from "@emotion/styled";
 
 export const HeroRoot = styled.div`
   position: relative;
-  padding: 5rem 10rem;
+  margin: auto;
+  height: 100vh;
+  display: flex;
+  align-items: center;
   @media ${(props) => props.theme.breakpoints.xl} {
     margin-top: 100px;
   }
@@ -17,7 +20,7 @@ export const HeroRoot = styled.div`
 
 export const SectionTitle = styled.h2`
   font-weight: bolder;
-  font-size: 60px;
+  font-size: 4.5rem;
   background: linear-gradient(
     121.57deg,
     #13adc7 18.77%,
@@ -26,11 +29,11 @@ export const SectionTitle = styled.h2`
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   @media ${(props) => props.theme.breakpoints.sm} {
-    font-size: 40px;
+    font-size: 2.5rem;
   }
 
   @media ${(props) => props.theme.breakpoints.xs} {
-    font-size: 50px;
+    font-size: 3.12rem;
   }
 `;
 
@@ -65,4 +68,6 @@ export const RightFlex = styled.div`
   display: flex;flex-direction: column;
   justify-content: center;
   margin: auto;
+  position: relative;
+  top: -8rem;
 `;

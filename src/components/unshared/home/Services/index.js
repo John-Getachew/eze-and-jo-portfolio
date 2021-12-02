@@ -48,9 +48,7 @@ const Services = () => {
     <ServiceRoot>
       <SectionHeader>What do we provide?</SectionHeader>
       <Description>
-        It is a long established fact that a reader will be distracted by the
-        readable content of a page when looking at its layout. <br /> It is a
-        long established fact.
+        We work at the intersection of business and technology to help clients improve performance and create sustainable value for stakeholders.
       </Description>
       <ServicesCardsContainer>
         {services.map((service) => (

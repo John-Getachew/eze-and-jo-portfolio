@@ -6,6 +6,7 @@ import {
   CourseTextContainer,
   MoreButton,
 } from "./style";
+import Link from 'next/link';
 import CourseCard from "./course-card";
 const coursesData = [
   {
@@ -57,7 +58,9 @@ const Course = () => {
         <CourseSectionDescription>
           we are providing classes that are upto industry standard and give you all things you need to knockout interviews and land your dream job.
         </CourseSectionDescription>
-        <MoreButton>Join Now</MoreButton>
+        <Link href={"https://forms.gle/6ugAqbgGHu7cpMhR6"} passHref>
+          <MoreButton>Join Now</MoreButton>
+        </Link>
       </CourseTextContainer>
     </CourseRoot>
   );

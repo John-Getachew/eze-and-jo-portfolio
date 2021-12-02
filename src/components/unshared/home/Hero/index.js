@@ -8,6 +8,7 @@ import {
   HeroRoot,
   RightFlex,
 } from "./style";
+import Link from 'next/link';
 const Hero = () => {
   return (
     <HeroRoot>
@@ -31,7 +32,9 @@ const Hero = () => {
               />
           </TypedServices>
           <Particles />
-          <GetStartedButton>Get Started</GetStartedButton>
+          <Link href={"https://forms.gle/6ugAqbgGHu7cpMhR6"} passHref>
+              <GetStartedButton>Get Started</GetStartedButton>
+          </Link>
       </RightFlex>
     </HeroRoot>
   );

@@ -1,10 +1,8 @@
 import styled from "@emotion/styled";
 
 export const HeroRoot = styled.div`
-  display: flex;
-  justify-content: space-between;
-  margin-top: 150px;
   position: relative;
+  padding: 5rem 10rem;
   @media ${(props) => props.theme.breakpoints.xl} {
     margin-top: 100px;
   }
@@ -12,28 +10,27 @@ export const HeroRoot = styled.div`
     text-align: center;
     flex-direction: column-reverse;
     margin-top: 0px;
+    padding: 5rem 1rem;
   }
   /* border: 1px solid #fff; */
 `;
 
 export const SectionTitle = styled.h2`
-  font-weight: 800;
+  font-weight: bolder;
   font-size: 60px;
   background: linear-gradient(
     121.57deg,
-    #ffffff 18.77%,
-    rgba(255, 255, 255, 0.66) 60.15%
+    #13adc7 18.77%,
+    #945dd6 60.15%
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   @media ${(props) => props.theme.breakpoints.sm} {
-    font-weight: 600;
     font-size: 40px;
   }
 
   @media ${(props) => props.theme.breakpoints.xs} {
-    font-weight: 600;
-    font-size: 30px;
+    font-size: 50px;
   }
 `;
 
@@ -55,8 +52,13 @@ export const GetStartedButton = styled.button`
   font-size: 16px;
   padding: 10px 30px 10px 30px;
   cursor: pointer;
+  max-width: 10rem;
 `;
 
 export const LeftFlex = styled.div``;
 
-export const RightFlex = styled.div``;
+export const RightFlex = styled.div`
+  display: flex;flex-direction: column;
+  justify-content: center;
+  margin: auto;
+`;

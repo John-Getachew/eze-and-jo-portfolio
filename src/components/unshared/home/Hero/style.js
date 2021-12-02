@@ -53,6 +53,10 @@ export const GetStartedButton = styled.button`
   padding: 10px 30px 10px 30px;
   cursor: pointer;
   max-width: 10rem;
+  @media ${(props) => props.theme.breakpoints.sm} {
+    align-self: center;
+    margin-top: 5rem;
+  }
 `;
 
 export const LeftFlex = styled.div``;

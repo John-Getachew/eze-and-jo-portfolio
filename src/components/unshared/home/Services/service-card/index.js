@@ -21,9 +21,9 @@ const ServiceCard = ({
       </ServiceCardIconContainer>
       <ServiceCardName>{serviceName}</ServiceCardName>
       <ServiceCardDescription>{serviceDescription}</ServiceCardDescription>
-      <Link href={serviceLink} passHref>
-        <LearnMoreButton>LEARN MORE</LearnMoreButton>
-      </Link>
+      {/*<Link href={serviceLink} passHref>*/}
+      {/*  <LearnMoreButton>LEARN MORE</LearnMoreButton>*/}
+      {/*</Link>*/}
     </ServiceCardRoot>
   );
 };

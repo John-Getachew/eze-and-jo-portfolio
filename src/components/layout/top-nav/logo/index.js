@@ -4,7 +4,7 @@ const Logo = () => {
   return (
     <LogoRootS>
       <LogoIconS />
-      <LogoNameS>MashaTechnologies</LogoNameS>
+      <LogoNameS>Masha Technologies</LogoNameS>
     </LogoRootS>
   );
 };

@@ -5,7 +5,7 @@ import {
   ServicesCardsContainer,
 } from "./style";
 import { FaChalkboardTeacher, FaTools, FaUserFriends } from "react-icons/fa";
-import { IoMdHelp } from "react-icons/io";
+import {IoIosCode, IoMdHelp} from "react-icons/io";
 import ServiceCard from "./service-card";
 
 const Services = () => {
@@ -13,7 +13,7 @@ const Services = () => {
     {
       serviceName: "Web/App development",
       serviceDescription:
-        "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+        "Developing scalable web apps and mobile apps.",
       serviceImage: <FaTools size={50} color={"#ffffff"} />,
       serviceLink: "/",
       serviceImageBackground: "#bf0043",
@@ -21,7 +21,7 @@ const Services = () => {
     {
       serviceName: "Live Classes",
       serviceDescription:
-        "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+        "Not all classes are created equal. we're the best in",
       serviceImage: <FaChalkboardTeacher size={50} color={"#ffffff"} />,
       serviceLink: "/",
       serviceImageBackground: "#00bfb2",
@@ -29,7 +29,7 @@ const Services = () => {
     {
       serviceName: "Recruitment",
       serviceDescription:
-        "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+        "We exclusively focused on identifying and engaging top engineering and technical talent.",
       serviceImage: <FaUserFriends size={50} color={"#ffffff"} />,
       serviceLink: "/",
       serviceImageBackground: "#bd00c7",
@@ -37,7 +37,7 @@ const Services = () => {
     {
       serviceName: "Job Assistance",
       serviceDescription:
-        "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+        "We help you on your job to be successful and make you more productive.",
       serviceImage: <IoMdHelp size={50} color={"#ffffff"} />,
       serviceLink: "/",
       serviceImageBackground: "#bd7800",
@@ -65,6 +65,8 @@ const Services = () => {
         ))}
       </ServicesCardsContainer>
     </ServiceRoot>
+
+
   );
 };
 

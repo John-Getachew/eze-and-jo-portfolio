@@ -3,6 +3,16 @@ import styled from "@emotion/styled";
 export const CourseRoot = styled.div`
   display: flex;
   align-items: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  @media ${(props) => props.theme.breakpoints.sm} {
+    flex-direction: column-reverse;
+    gap: 5em;
+  }
+
+  // @media ${(props) => props.theme.breakpoints.xs} {
+  //   font-size: 50px;
+  // }
 `;
 
 export const CoursesListContainer = styled.div`
@@ -15,7 +25,7 @@ export const CoursesListContainer = styled.div`
     /* grid-template-columns: 2fr 1fr; */
   }
   @media ${(props) => props.theme.breakpoints.md} {
-    /* grid-template-columns: 1fr; */
+     grid-template-columns: 1fr;
   }
 `;
 

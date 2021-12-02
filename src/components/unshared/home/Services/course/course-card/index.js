@@ -41,9 +41,9 @@ const CourseCard = ({
       <CourseCardTextContainer>
         <ServiceName>{serviceName}</ServiceName>
         <ServiceDescription>{serviceDescription}</ServiceDescription>
-        <Link href={serviceLink} passHref>
-          <ServiceLink>Read more</ServiceLink>
-        </Link>
+        {/*<Link href={serviceLink} passHref>*/}
+        {/*  <ServiceLink>Read more</ServiceLink>*/}
+        {/*</Link>*/}
       </CourseCardTextContainer>
     </CardRoot>
   );

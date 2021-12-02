@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Drawer from "./drawer";
+import Footer from "./footer";
 import { LayoutRootS } from "./style";
 import TopNav from "./top-nav";
 
@@ -28,6 +29,7 @@ const Layout = ({ children }) => {
         handleToggleClick={handleToggleClick}
       />
       {children}
+      <Footer />
     </LayoutRootS>
   );
 };
